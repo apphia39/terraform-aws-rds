@@ -66,12 +66,12 @@ resource "aws_db_instance" "rds" {
   username               = var.rds_username
   vpc_security_group_ids = var.rds_security_group_ids
 
-  restore_to_point_in_time {
-    restore_time                  = var.restore_time
-    source_db_instance_identifier = var.source_db_instance_identifier
-    source_dbi_resource_id        = var.source_dbi_resource_id
-    use_latest_restorable_time    = var.use_latest_restorable_time
-  }
+  # restore_to_point_in_time {
+  #   restore_time                  = var.restore_time
+  #   source_db_instance_identifier = var.source_db_instance_identifier
+  #   source_dbi_resource_id        = var.source_dbi_resource_id
+  #   use_latest_restorable_time    = var.use_latest_restorable_time
+  # }
 
   # need S3 resource  
   # s3_import{
