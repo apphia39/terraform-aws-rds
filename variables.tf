@@ -68,14 +68,12 @@ variable "rds_password" {
   description = "Password for the master DB user."
   type        = string
   default     = ""
-  sensitive   = true
 }
 
 variable "rds_port" {
   description = "The port on which the DB accepts connections."
   type        = string
   default     = ""
-  sensitive   = true
 }
 
 variable "rds_security_group_ids" {
